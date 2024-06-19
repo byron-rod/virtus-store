@@ -2,6 +2,7 @@
 import React from "react";
 import book1 from "../assets/books/book1.jpg"; // Importing book image
 import "../styles/BookComponent.css"; // Importing CSS for styling
+import Rating from "./Rating";
 
 const BookComponent = () => {
   return (
@@ -17,10 +18,7 @@ const BookComponent = () => {
       <div className="book-details">
         <h1>Chain of Gold: The Last Hours #1</h1>
         <h2>Cassandra Clare</h2>
-        <div className="rating">
-          <span>⭐️⭐️⭐️⭐️☆</span>
-          <span>4.5</span>
-        </div>
+        <Rating value={4.5} text="20 reviews" />
         <div className="price">$12.49</div>
         <p>
           From #1 New York Times and USA TODAY bestselling author Cassandra

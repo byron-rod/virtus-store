@@ -14,13 +14,13 @@ const Navbar = () => {
   };
 
   return (
-    <div className="h-30 bg-third px-10 md:px-12 lg:px-20 xl:px-32 2xl:px-64 relative">
+    <div className="h-30 bg-secondary px-10 md:px-12 lg:px-20 xl:px-32 2xl:px-64 relative">
       <div className="container py-1">
         <div className="flex justify-between items-center">
-          <div className="flex items-center">
+          <div className="flex items-center p-2">
             <img src={logo} alt="logo" className="w-20 h-20" />
             <div className="hidden sm:hidden md:flex">
-              <Link to="/home" className="px-4">
+              <Link to="/" className="px-4">
                 Inicio
               </Link>
               <Link to="/about" className="px-4">
@@ -44,7 +44,7 @@ const Navbar = () => {
               <div className="relative">
                 <FiUser size={28} onClick={handleProfile} />
                 {isProfileOpen && (
-                  <div className="absolute p-4 top-10 left-0 text-md bg-third rounded-md shadow-bottom z-10">
+                  <div className="absolute p-4 top-10 left-0 text-md bg-white rounded-md shadow-bottom z-20">
                     <Link to="/profile">Perfil</Link>
                     <div className="mt-2 cursor-pointer">Logout</div>
                   </div>
@@ -62,7 +62,7 @@ const Navbar = () => {
             onClick={() => setOpen((prev) => !prev)}
           />
           {open && (
-            <div className="flex flex-col items-center w-1/2 h-74 bg-third absolute top-20 right-0 z-10 sm:hidden">
+            <div className="flex flex-col items-center w-full h-74 bg-secondary absolute top-20 right-0 z-10 sm:hidden">
               <Link to="/courses" className="py-4 ">
                 Inicio
                 <div className="absolute left-0 bottom-0 w-full h-1 bg-gray-200"></div>

@@ -16,12 +16,16 @@
     background-color: #3752a6;
   }
 
+  .bg-fourth {
+    background-color: #273273;
+  }
+
   .text-primary {
     color: #333;
   }
 
   .text-secondary {
-    color: #555;
+    color: #273273;
   }
 
   .text-tertiary {
@@ -121,4 +125,24 @@ body {
   right: 0;
   height: 10px;
   box-shadow: 0 8px 10px rgba(0, 0, 0, 0.1);
+}
+
+.star {
+  color: #f2b01e;
+}
+
+.about {
+  @apply text-6xl xl:text-[72px] xl:leading-[80px] text-primary font-semibold;
+}
+
+.typewriter {
+  @apply text-2xl xl:text-[36px] xl:leading-[40px] text-secondary font-semibold tracking-wide;
+}
+
+.subtitle {
+  @apply text-sm font-light;
+}
+
+.socials {
+  @apply text-4xl xl:text-[36px] xl:leading-[40px] text-primary;
 }

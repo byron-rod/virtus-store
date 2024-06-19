@@ -5,7 +5,7 @@ import book3 from "./assets/books/book3.png";
 const books = [
   {
     _id: "1",
-    name: "Coach Corner",
+    name: "Coach Corner: Coaching Ejecutivo",
     author: "Dr. Virgilio Cordon",
     category: "Coaching",
     image: book1,
@@ -17,7 +17,7 @@ const books = [
   },
   {
     _id: "2",
-    name: "Despierta tienes la grandeza para una vida extraordinaria!",
+    name: "Despierta! Tienes la grandeza para una vida extraordinaria.",
     author: "Dr. Virgilio Cordon",
     category: "Coaching",
     image: book2,
@@ -29,7 +29,7 @@ const books = [
   },
   {
     _id: "3",
-    name: "Hasta que la muerte nos separe",
+    name: "Hasta Que La Muerte Nos Separe",
     author: "Dr. Virgilio Cordon",
     category: "Coaching",
     image: book3,

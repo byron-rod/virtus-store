@@ -1,14 +1,14 @@
 import React from "react";
 import Hero from "../components/Hero";
-import BookComponent from "../components/BookComponent";
+import About from "../components/About";
 
 const HomeScreen = () => {
   return (
     <>
-      <div className="">
+      <main>
         <Hero />
-        <BookComponent />
-      </div>
+        <About />
+      </main>
     </>
   );
 };

@@ -1,14 +1,18 @@
-import React from "react";
-import { BrowserRouter as Router } from "react-router-dom";
+import { Outlet } from "react-router-dom";
 import Navbar from "./components/Navbar";
-import HomeScreen from "./screens/HomeScreen";
+import Footer from "./components/Footer";
 
 const App = () => {
   return (
-    <Router>
+    <>
       <Navbar />
-      <HomeScreen />
-    </Router>
+      <main>
+        <div className="container">
+          <Outlet />
+        </div>
+      </main>
+      <Footer />
+    </>
   );
 };
 
