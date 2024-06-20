@@ -1,10 +1,8 @@
 import { Link } from "react-router-dom";
-import books from "../books";
 import Rating from "./Rating";
 import Division from "./Division";
 
-const BookList = () => {
-  console.log(books);
+const BookList = ({ books }) => {
   return (
     <>
       <Division />

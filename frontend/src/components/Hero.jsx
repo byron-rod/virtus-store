@@ -1,8 +1,18 @@
-import React, { useState } from "react";
-import books from "../books.js";
+import React, { useState, useEffect } from "react";
 
-const Hero = ({ handleOrderPopup }) => {
-  const [book, setBook] = useState(books[0]); // start with the first book
+const Hero = ({ handleOrderPopup, books }) => {
+  const [book, setBook] = useState(books[0]);
+
+  useEffect(() => {
+    if (books && books.length > 0) {
+      setBook(books[0]);
+    }
+  }, [books]);
+
+  // don't render if book is not set
+  if (!book) {
+    return null;
+  }
 
   return (
     <>

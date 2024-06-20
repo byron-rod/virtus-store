@@ -1,21 +1,32 @@
-import React from "react";
+import { useEffect, useState } from "react";
 import Hero from "../components/Hero";
 import About from "../components/About";
 import BookList from "../components/BookList";
-import books from "../books";
+import axios from "axios";
 
 const HomeScreen = () => {
+  const [books, setBooks] = useState([]);
+
+  useEffect(() => {
+    // use axios to fetch data from the backend
+    const fetchBooks = async () => {
+      const { data } = await axios.get("/api/books");
+      setBooks(data);
+    };
+    fetchBooks();
+  }, []);
+
   return (
     <>
       <main>
         <section>
-          <Hero />
+          <Hero books={books} />
         </section>
         <section>
           <About />
         </section>
         <section>
-          <BookList component={books} />
+          <BookList books={books} />
         </section>
       </main>
     </>
