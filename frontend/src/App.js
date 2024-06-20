@@ -6,8 +6,8 @@ const App = () => {
   return (
     <>
       <Navbar />
-      <main>
-        <div className="container">
+      <main className="w-[100%] overflow-x-hidden">
+        <div>
           <Outlet />
         </div>
       </main>

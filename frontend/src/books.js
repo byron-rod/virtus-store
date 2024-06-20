@@ -1,6 +1,6 @@
-import book1 from "./assets/books/book1.jpg";
-import book2 from "./assets/books/book2.png";
-import book3 from "./assets/books/book3.png";
+import book1 from "./assets/books/ebook1.jpg";
+import book2 from "./assets/books/ebook2.jpg";
+import book3 from "./assets/books/ebook3.jpg";
 
 const books = [
   {
@@ -8,7 +8,7 @@ const books = [
     name: "Coach Corner: Coaching Ejecutivo",
     author: "Dr. Virgilio Cordon",
     category: "Coaching",
-    image: book1,
+    image: book2,
     description:
       "The Coach Corner is a book that will help you to improve your skills and become a better coach. It is a must-read for anyone who wants to take their coaching to the next level.",
     price: 29.99,
@@ -20,7 +20,7 @@ const books = [
     name: "Despierta! Tienes la grandeza para una vida extraordinaria.",
     author: "Dr. Virgilio Cordon",
     category: "Coaching",
-    image: book2,
+    image: book1,
     description:
       "The Art of Coaching is a book that will help you to improve your skills and become a better coach. It is a must-read for anyone who wants to take their coaching to the next level.",
     price: 19.99,

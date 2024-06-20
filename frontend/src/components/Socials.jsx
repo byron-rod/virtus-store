@@ -37,7 +37,7 @@ const icons = [
 function Socials() {
   return (
     <div>
-      <div className="flex justify-center items-center md:gap-24 gap-14 p-1">
+      <div className="flex justify-center items-center md:gap-24 gap-10 sm:gap-14 p-1">
         {icons.map((item) => (
           <a
             className="socials text-[40px] transition-all duration-300 ease-in-out cursor-pointer transform hover:scale-125"

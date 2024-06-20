@@ -6,18 +6,18 @@ const Hero = ({ handleOrderPopup }) => {
 
   return (
     <>
-      <div className="min-h-[550px] sm:min-h-[550px] bg-secondary flex flex-col md:flex-row">
+      <div className="min-h-[550px] md:min-h-[550px] bg-secondary mt-24 flex flex-col md:flex-row border-8 border-solid xl:px-[8rem]">
         <div className="order-2 md:order-1">
           <div className="grid grid-cols-1 md:grid-cols-2">
-            <div className="flex flex-col justify-center md:mb-8 md:ml-16 mx-6 order-2 md:order-1">
-              <h1 className="text-4xl lg:text-6xl font-semibold lg:ml-16 p-4 uppercase">
+            <div className="flex flex-col justify-center md:mb-8 md:ml-16 mx-6 order-2 md:order-1 p-4 md:p-0">
+              <h1 className="text-5xl lg:text-6xl font-semibold lg:ml-16 p-4 uppercase">
                 {book.name}
                 <p className="text-sm pt-2 mt-2 font-semibold">
                   por {book.author}
                 </p>{" "}
               </h1>
               <div className="lg:ml-16 p-4">
-                <p className="text-sm font-normal">{book.description}</p>
+                <p className="text-md font-normal">{book.description}</p>
               </div>
               <div className="flex ml-4 mb-4">
                 <button className="bg-third hover:bg-fourth py-2 px-4 rounded-md lg:ml-16 text-white">
